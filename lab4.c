@@ -5,7 +5,14 @@ int main() {
     int hours;
     float rate;
 
-    scanf("%s %d %f", id, &hours, &rate);  
+    printf("Input the Employees ID (Max. 10 chars): ");
+    scanf("%s", id);
+
+    printf("Input the working hrs: ");
+    scanf("%d", &hours);
+
+    printf("Salary amount/hr: ");
+    scanf("%f", &rate);
 
     printf("Employees ID = %s\n", id);
     printf("Salary = U$ %.2f\n", hours * rate); 
