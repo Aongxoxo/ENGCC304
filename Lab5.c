@@ -4,6 +4,7 @@ int main() {
     int score = 0;
 
     printf("Enter score: ");
+    
     if (scanf("%d", &score) != 1) {
         printf("Please enter a number only.\n");
     } else {
