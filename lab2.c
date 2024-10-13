@@ -6,17 +6,17 @@ int main() {
     int num2;
     float number;
     char string[100];
-
-    printf("Enter a character: ");
+    
+    printf("Enter a character:\n");
     scanf(" %c", &inputChar);
 
-    printf("Enter two integers: ");
+    printf("Enter two integers:\n");
     scanf("%d %d", &num1, &num2);
-
-    printf("Enter a floating-point number: ");
+    
+    printf("Enter a floating-point number:\n");
     scanf("%f", &number);
 
-    printf("Enter a string: ");
+    printf("Enter a string:\n");
     scanf("%s", string);
 
     printf("You entered character: %c\n", inputChar);
