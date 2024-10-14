@@ -10,15 +10,24 @@ struct Student {
     float ScoreSub5;
 } typedef S;
 
-char getGrade(float score) {
-    if (score >= 80) return 'A';
-    else if (score >= 75) return 'B+';
-    else if (score >= 70) return 'B';
-    else if (score >= 65) return 'C+';
-    else if (score >= 60) return 'C';
-    else if (score >= 55) return 'D+';
-    else if (score >= 50) return 'D';
-    else return 'F';
+const char* getGrade(float score) {
+    if (score >= 80) {
+        return "A";
+    } else if (score >= 75 && score < 80) {
+        return "B+";
+    } else if (score >= 70 && score < 75) {
+        return "B";
+    } else if (score >= 65 && score < 70) {
+        return "C+";
+    } else if (score >= 60 && score < 65) {
+        return "C";
+    } else if (score >= 55 && score < 60) {
+        return "D+";
+    } else if (score >= 50 && score < 55) {
+        return "D";
+    } else {
+        return "F";
+    }
 }
 
 int main() {
@@ -57,19 +66,16 @@ int main() {
         printf("Name: %s\n", students[i].Name);
         printf("ID: %s\n", students[i].ID);
 
-        // แสดงคะแนน
         printf("Scores: %.1f %.1f %.1f %.1f %.1f\n", 
                students[i].ScoreSub1, students[i].ScoreSub2, 
                students[i].ScoreSub3, students[i].ScoreSub4, 
                students[i].ScoreSub5);
 
-        // แสดงเกรด
-        printf("Grades: %c %c %c %c %c\n", 
+        printf("Grades: %s %s %s %s %s\n", 
                getGrade(students[i].ScoreSub1), getGrade(students[i].ScoreSub2), 
                getGrade(students[i].ScoreSub3), getGrade(students[i].ScoreSub4), 
                getGrade(students[i].ScoreSub5));
 
-        // คำนวณและแสดงค่าเฉลี่ย
         average = (students[i].ScoreSub1 + students[i].ScoreSub2 + students[i].ScoreSub3 + 
                    students[i].ScoreSub4 + students[i].ScoreSub5) / 5;
         printf("Average Scores: %.1f\n", average);
