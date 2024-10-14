@@ -2,7 +2,7 @@
 
 int main () {
     int n = 0 ;
-    int box[n] ;
+    int box[100] ;
     int number = 1 ;
     int j = 3 ;
     int i = 0 ;
