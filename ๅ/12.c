@@ -66,7 +66,7 @@ int main() {
         printf("Name: %s\n", students[i].Name);
         printf("ID: %s\n", students[i].ID);
 
-        printf("Scores: %.1f %.1f %.1f %.1f %.1f\n", 
+        printf("Scores: %d %d %d %d %d\n", 
                students[i].ScoreSub1, students[i].ScoreSub2, 
                students[i].ScoreSub3, students[i].ScoreSub4, 
                students[i].ScoreSub5);
@@ -75,7 +75,7 @@ int main() {
                getGrade(students[i].ScoreSub1), getGrade(students[i].ScoreSub2), 
                getGrade(students[i].ScoreSub3), getGrade(students[i].ScoreSub4), 
                getGrade(students[i].ScoreSub5));
-
+        
         average = (students[i].ScoreSub1 + students[i].ScoreSub2 + students[i].ScoreSub3 + 
                    students[i].ScoreSub4 + students[i].ScoreSub5) / 5;
         printf("Average Scores: %.1f\n", average);
