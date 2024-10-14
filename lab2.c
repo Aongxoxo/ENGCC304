@@ -7,16 +7,16 @@ int main() {
     float number;
     char string[100];
     
-    printf("Enter a character:\n");
+    printf("Enter a character:");
     scanf(" %c", &inputChar);
 
-    printf("Enter two integers:\n");
+    printf("Enter two integers:");
     scanf("%d %d", &num1, &num2);
     
-    printf("Enter a floating-point number:\n");
+    printf("Enter a floating-point number:");
     scanf("%f", &number);
 
-    printf("Enter a string:\n");
+    printf("Enter a string:");
     scanf("%s", string);
 
     printf("You entered character: %c\n", inputChar);
