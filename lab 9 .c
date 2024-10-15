@@ -8,18 +8,18 @@ int main () {
     int i = 0 ;
    
 
-    printf ( " Enter N: " ) ;
+    printf ( " Enter N : " ) ;
     scanf ( "%d" , &n ) ;
 
     for ( i = 0 ; i < n; i++ ) {
-        printf ( " Enter value [%d] : ", i ) ;
+        printf ( "Enter value[%d] : ", i ) ;
         scanf ( "%d", &box[i] ) ;
     }
-     printf ( " Index " ) ;
+     printf ( " Index: " ) ;
     for ( i = 0 ; i < n ; i++ ) {
         printf ( " %d " , i) ;
     }
-    printf ( " \nAirry: " ) ;
+    printf ( " \nArray: " ) ;
 
     for ( i = 0; i < n; i++) {
          number = 1 ;
