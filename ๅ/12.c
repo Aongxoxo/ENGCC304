@@ -66,7 +66,7 @@ int main() {
         printf("Name: %s\n", students[i].Name);
         printf("ID: %s\n", students[i].ID);
 
-        printf("Scores: %d %d %d %d %d\n", 
+        printf("Scores: %.0f %.0f %.0f %.0f %.0f\n", 
                students[i].ScoreSub1, students[i].ScoreSub2, 
                students[i].ScoreSub3, students[i].ScoreSub4, 
                students[i].ScoreSub5);
