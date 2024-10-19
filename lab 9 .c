@@ -9,15 +9,15 @@ int main () {
    
 
     printf ( " Enter N : " ) ;
-    scanf ( "%d" , &n ) ;
+    scanf ( "%2d" , &n ) ;
 
     for ( i = 0 ; i < n; i++ ) {
-        printf ( "Enter value[%d] : ", i ) ;
+        printf ( "Enter value[%2d] : ", i ) ;
         scanf ( "%d", &box[i] ) ;
     }
      printf ( " Index: " ) ;
     for ( i = 0 ; i < n ; i++ ) {
-        printf ( " %d " , i) ;
+        printf ( " %2d " , i) ;
     }
     printf ( " \nArray: " ) ;
 
@@ -38,7 +38,7 @@ int main () {
             }
         }
         if ( number ) {
-            printf ( " %d " , box [ i ] ) ;
+            printf ( " %2d " , box [ i ] ) ;
         } else {
             printf( " # ") ;
         } 
