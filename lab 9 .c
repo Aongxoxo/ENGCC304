@@ -15,7 +15,7 @@ int main () {
         printf ( "Enter value[%2d] : ", i ) ;
         scanf ( "%d", &box[i] ) ;
     }
-     printf ( " Index: " ) ;
+     printf ( "Index: " ) ;
     for ( i = 0 ; i < n ; i++ ) {
         printf ( " %2d " , i) ;
     }
